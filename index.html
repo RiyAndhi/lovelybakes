@@ -1,101 +1,334 @@
-
 <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kelompok LovelyBakes</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body {
-    background-color: #f0e6d2;
-    color: #3a2e2e;
-    font-family: 'Courier Prime', monospace;
-    margin: 0;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    }
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/cake_logo.png" type="image/x-icon">
 
-    h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #7b3f00;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    border-bottom: 3px solid #7b3f00;
-    padding-bottom: 0.5rem;
-    text-align: center;
-    }
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    table {
-    width: 80%;
-    max-width: 500px;
-    border-collapse: collapse;
-    background-color: #fff9f0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    }
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    th, td {
-    padding: 12px 20px;
-    text-align: left;
-    border-bottom: 1px solid #d9cfc3;
-    font-size: 1rem;
-    color: #5b4636;
-    }
+        <title>LovelyBakes - Aneka Kue Kering</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav_logo">
+                    <img src="assets/img/cake_logo.png" alt="logo image">
+                    LovelyBakes
+                </a>
 
-    th {
-    background-color: #c3b299;
-    color: #fff;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    }
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">Beranda</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">Tentang Kami</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#popular" class="nav_link">Populer</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#recently" class="nav_link">Terbaru</a>
+                        </li>
+                    </ul>
 
-    tbody tr:hover {
-    background-color: #f5e9d3;
-    cursor: default;
-    }
+                    <!-- close button -->
+                    <div class="nav_close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
 
-    footer {
-    margin-top: auto;
-    font-size: 0.8rem;
-    color: #a28a70;
-    margin-top: 3rem;
-    font-style: italic;
-    }
-  </style>
-</head>
-<body>
-  <h1>Kelompok LovelyBakes</h1>
+                    <img src="assets/img/leaf-branch-4.png" alt="nav image" class="nav_img-1">
+                    <img src="assets/img/leaf-branch-3.png" alt="nav image" class="nav_img-2">
+                </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Nama</th>
-        <th>NIM</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>M. Ikhsan</td>
-        <td>22.11.5260</td>
-      </tr>
-      <tr>
-        <td>Muhamad Armin</td>
-        <td>22.11.5281</td>
-      </tr>
-      <tr>
-        <td>Riyan Andhika</td>
-        <td>22.11.5293</td>
-      </tr>
-    </tbody>
-  </table>
+                <div class="nav_buttons">
+                    <!-- Theme change button -->
+                    <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
 
-  <footer>© 2025 Kelompok LovelyBakes</footer>
-</body>
+                    <!-- Toggle button -->
+                    <div class="nav_toggle" id="nav-toggle">
+                        <i class="ri-apps-2-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home_container container grid">
+                    <img src="assets/img/home-img.png" alt="chocolate cake" class="home_img">
+
+                    <div class="home_data">
+                        <h1 class="home_title">
+                            Nikmati Lezatnya
+    
+                            <div>
+                                <!-- <img src="assets/img/small-cake-img.png" alt="home image"> -->
+                                Kue Kering Premium
+                            </div>
+                        </h1>
+    
+                        <p class="home_description">
+                            Dibuat dengan bahan berkualitas dan rasa yang tak terlupakan. 
+                            Cocok untuk hampers, lebaran, atau camilan harian.
+                        </p>
+    
+                        <a href="#" class="button">
+                            Pesan Sekarang <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <img src="assets/img/leaf-branch-2.png" alt="home image" class="home_leaf-1">
+                <img src="assets/img/leaf-branch-4.png" alt="home image" class="home_leaf-2">
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about_container container grid">
+                    <div class="about_data">
+                        <span class="section_subtitle">Tentang Kami</span>
+                        <h2 class="section_title about_title">
+                            <div>
+                                Kami Menyediakan
+                                <!-- <img src="assets/img/small-cake-img-1.png" alt="about image"> -->
+                            </div>
+                            Aneka Kue Kering <br>
+                            Berkualitas Tinggi
+                        </h2>
+
+                        <p class="about_description">
+                            Kami menghadirkan aneka kue kering yang dibuat dari bahan premium. 
+                            Cocok untuk oleh-oleh, hampers, atau camilan keluarga. Pesan 
+                            sekarang dan rasakan sendiri kelezatannya!
+                        </p>
+                    </div>
+                    <img src="assets/img/cupcakes-1.png" alt="about image" class="about_img">
+                </div>
+                <!-- <img src="assets/img/leaf-3.png" alt="about image" class="about_img-1">
+                    <img src="assets/img/leaf-3.png" alt="about image" class="about_img-2"> -->
+                <img src="assets/img/leaf-branch-1.png" alt="about image" class="about_leaf">
+            </section>
+
+            <!--==================== POPULAR ====================-->
+            <section class="popular section" id="popular">
+                <span class="section_subtitle">Menu Kue Kering</span>
+                <h2 class="section_title">Terpopuler</h2>
+
+                <div class="popular_container container grid">
+                    <article class="popular_card">
+                        <img src="assets/img/popular-img1.png" alt="popular image" class="popular_img">
+
+                        <h3 class="popular_name">Mawar</h3>
+                        <span class="popular_description">Kue kering lembut dengan coklat manis ditengah. Favorit saat lebaran!</span>
+
+                        <span class="popular_price">Rp35.000</span>
+
+                        <button class="popular_button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                    <article class="popular_card">
+                        <img src="assets/img/popular-img2.png" alt="popular image" class="popular_img">
+
+                        <h3 class="popular_name">Kastengel</h3>
+                        <span class="popular_description">Gurih keju meleleh di mulut, cocok untuk camilan keluarga.</span>
+
+                        <span class="popular_price">Rp32.000</span>
+
+                        <button class="popular_button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                    <article class="popular_card">
+                        <img src="assets/img/popular-img3.png" alt="popular image" class="popular_img">
+
+                        <h3 class="popular_name">Putri Salju</h3>
+                        <span class="popular_description">Kue lembut bertabur gula halus yang lumer di mulut.</span>
+
+                        <span class="popular_price">Rp38.000</span>
+
+                        <button class="popular_button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                </div>
+                <a href="#" class="button popular_more">
+                    Lihat Semua Produk  <i class="ri-arrow-right-line"></i>
+                </a>
+            </section>
+
+            <!--==================== RECENTLY ====================-->
+            <section class="recently section" id="recently">
+                <div class="recently_container container grid">
+                    <div class="recently_data">
+                        <span class="section_subtitle">Menu Baru</span>
+                        <h2 class="section_title">Kue Nastar <br>
+                            Kacang Spesial
+                            <!-- <img src="assets/img/berries.png" alt="recently image"> -->
+                        </h2>
+                        <p class="recently_description">
+                            Perpaduan unik nastar dengan kacang 
+                            lezat! Segera coba sebelum kehabisan.
+                        </p>
+
+                        <a href="#" class="button">
+                            Pesan Sekarang <i class="ri-arrow-right-line"></i>
+                        </a>
+
+                        <img src="assets/img/strawberry.png" alt="recently image" class="recently_data-img-1">
+                        <img src="assets/img/strawberry.png" alt="recently image" class="recently_data-img-2">
+                    </div>
+
+                    <img src="assets/img/recently-img 2.png" alt="recently image" class="recently_img">
+                </div>
+                <img src="assets/img/leaf-branch-2.png" alt="recently image" class="recently_leaf-1">
+                <img src="assets/img/leaf-branch-3.png" alt="recently image" class="recently_leaf-2">
+            </section>
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section">
+                <div class="newsletter_container container">
+                    <div class="newsletter_content grid">
+                        <img src="assets/img/newsletter-img.png" alt="newsletter image" class="newsletter_img">
+                        <div class="newsletter_data">
+                            <span class="section_subtitle">Berlangganan</span>
+                            <h2 class="section_title">
+                                Dapatkan Info Promo <br>
+                                & Kue Terbaru
+                            </h2>
+                            <form action="" class="newsletter_form">
+                                <input type="email" placeholder="Masukkan email" class="newsletter_input">
+
+                                <button class="button newsletter_button">
+                                    Langganan <i class="ri-send-plane-line"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer_container container grid">
+                <div>
+                    <a href="#" class="footer_logo">
+                        <img src="assets/img/cake_logo.png" alt="logo image">
+                        LovelyBakes 
+                    </a>
+
+                    <p class="footer_description">
+                        Kue kering bukan hanya <br>
+                        soal rasa, tapi juga <br>
+                        kehangatan untuk jiwa.
+                    </p>
+                </div>
+                <div class="footer_content">
+                    <div>
+                        <h3 class="footer_title">Main Menu</h3>
+
+                        <ul class="footer_links">
+                            <li>
+                                <a href="#" class="footer_link">Tentang Kami</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">Produk</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">Promo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">Event</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer_title">Informasi</h3>
+
+                        <ul class="footer_links">
+                            <li>
+                                <a href="#" class="footer_link">Kontak</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">Pengembalian</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">Video</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">Reservasi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer_title">Alamat</h3>
+
+                        <ul class="footer_links">
+                            <li class="footer_information">
+                                Jl. Ring Road Utara, Ngringin, <br>
+                                Condongcatur, Kec. Depok, <br>
+                                Kabupaten Sleman, Daerah <br>
+                                Istimewa Yogyakarta 55281
+                            </li>
+                            <li class="footer_information">
+                                Buka: 09.00 - 21.00 WIB
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer_title">Media Sosial</h3>
+
+                        <ul class="footer_social">
+                            <a href="https://www.facebook.com/" target="_blank" class="footer_social-link">
+                                <i class="ri-facebook-circle-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer_social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://whatsapp.com/" target="_blank" class="footer_social-link">
+                                <i class="ri-whatsapp-fill"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <img src="assets/img/leaf-3.png" alt="footer image" class="footer_leaf-small"> -->
+                <img src="assets/img/leaf-branch-4.png" alt="footer image" class="footer_leaf">
+            </div>
+            <div class="footer_info container">
+                <div class="footer_card">
+                    <img src="assets/img/footer-card-1.png" alt="footer image">
+                    <img src="assets/img/footer-card-2.png" alt="footer image">
+                    <img src="assets/img/footer-card-3.png" alt="footer image">
+                    <img src="assets/img/footer-card-4.png" alt="footer image">
+                </div>
+
+                <span class="footer_copy">
+                    &#169; Copyright LovelyBakes. All rights reserved.
+                </span>
+            </div>
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/ScrollReveal.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
