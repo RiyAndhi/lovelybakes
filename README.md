@@ -1,1 +1,2 @@
-# lovelybakes
+
+Dilarang mengambil project ini!
